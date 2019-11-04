@@ -3,6 +3,29 @@ entries:
   graylog:
   - apiVersion: v1
     appVersion: 3.0.2-2
+    created: "2019-11-04T11:07:26.2710471+07:00"
+    description: Graylog is the centralized log management solution built to open
+      standards for capturing, storing, and enabling real-time analysis of terabytes
+      of machine data.
+    digest: 20e83705dcded5de21b2b16b11e41b10cca933cf2e2cc0c9c83579bdba15bc9b
+    home: https://www.graylog.org
+    icon: https://global-uploads.webflow.com/5a218ef7897bf400019e2f16/5a218ef7897bf400019e2f60_logo-graylog.png
+    keywords:
+    - graylog
+    - logs
+    - syslog
+    - gelf
+    maintainers:
+    - email: goonohc@gmail.com
+      name: KongZ
+    name: graylog
+    sources:
+    - https://www.graylog.org
+    urls:
+    - https://github.com/k1m0ch1/helm/releases/download/graylog-2.0.0/graylog-2.0.0.tgz
+    version: 2.0.0
+  - apiVersion: v1
+    appVersion: 3.0.2-2
     created: "2019-11-04T10:44:02.8169714+07:00"
     description: Graylog is the centralized log management solution built to open
       standards for capturing, storing, and enabling real-time analysis of terabytes
