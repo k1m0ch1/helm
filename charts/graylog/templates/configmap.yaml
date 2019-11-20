@@ -84,8 +84,11 @@ data:
     rest_listen_uri = http://0.0.0.0:9000/api/
     web_listen_uri = http://0.0.0.0:9000/
     web_endpoint_uri =  https://graylog.nubela.co/api
+  {{- else }}
     http_bind_address = 0.0.0.0:9000
+    {{- if .Values.graylog.ingress.enabled }}
     http_external_uri = https://graylog.nubela.co/
+    {{- end }}
   {{- end }}
     elasticsearch_hosts = {{ template "graylog.elasticsearch.hosts" . }}
     allow_leading_wildcard_searches = false
