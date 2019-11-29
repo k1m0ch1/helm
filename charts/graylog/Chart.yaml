@@ -16,4 +16,4 @@ maintainers:
 name: graylog
 sources:
 - https://www.graylog.org
-version: 2.1.0
+version: 2.1.1

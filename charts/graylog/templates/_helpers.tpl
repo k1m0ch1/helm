@@ -49,6 +49,7 @@ Print Host URL
 {{- range .Values.graylog.ingress.hosts }}http://{{ . }}{{ end }}
 {{- end -}}
 {{- end -}}
+{{- end -}}
 
 {{/*
 Create a default fully qualified elasticsearch name or use the `graylog.elasticsearch.hosts` value if defined.
