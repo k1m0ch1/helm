@@ -43,12 +43,11 @@ Print Host URL
 */}}
 {{- define "graylog.url" -}}
 {{- if .Values.graylog.ingress.enabled }}
-{{- if .Values.graylog.ingress.tls }}
-{{- range .Values.graylog.ingress.tls }}{{ range .hosts }}https://{{ . }}{{ end }}{{ end }}
-{{- else }}
+{{- if .Values.graylog.ingress.cloudflare.proxied }}
+{{- range .Values.graylog.ingress.hosts }}https://{{ . }}{{ end }}
+{{- else -}}
 {{- range .Values.graylog.ingress.hosts }}http://{{ . }}{{ end }}
-{{- end }}
-{{- end }}
+{{- end -}}
 {{- end -}}
 
 {{/*

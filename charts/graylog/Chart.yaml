@@ -11,9 +11,9 @@ keywords:
 - syslog
 - gelf
 maintainers:
-- email: goonohc@gmail.com
-  name: KongZ
+- email: yahya.kimochi@gmail.com
+  name: k1m0ch1
 name: graylog
 sources:
 - https://www.graylog.org
-version: 2.0.1
+version: 2.1.0

@@ -81,7 +81,9 @@ data:
     root_timezone = {{ default "UTC" .Values.graylog.rootTimezone }}
     plugin_dir = /usr/share/graylog/plugin
     http_bind_address = 0.0.0.0:9000
-    http_external_uri = https://graylog.nubela.co/
+    {{- if .Values.graylog.ingress.enabled }}
+      http_external_uri = {{ template "graylog.url" .}}/
+    {{- end }}
     elasticsearch_hosts = {{ template "graylog.elasticsearch.hosts" . }}
     allow_leading_wildcard_searches = false
     allow_highlighting = false

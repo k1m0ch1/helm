@@ -30,7 +30,6 @@ graylog:
   ## Make sure you strict with the `x` version of Graylog where `x` is ${version}-${x}
   ##
   image:
-    # repository: "graylog/graylog:2.5.1-3"
     repository: "graylog/graylog:3.0.2-2"
     pullPolicy: "IfNotPresent"
 
@@ -122,6 +121,7 @@ graylog:
     #   service:
     #     type: LoadBalancer
     #     loadBalancerIP:
+    #     annotations: {}
     #   ports:
     #     - name: gelf
     #       port: 12222
@@ -136,6 +136,10 @@ graylog:
     ## If true, Graylog server Ingress will be created
     ##
     enabled: false
+    ## Graylog server Ingress proxied by cloudflare
+    ##
+    cloudflare:
+      proxied: false
     ## Graylog server Ingress annotations
     ##
     annotations: {}
