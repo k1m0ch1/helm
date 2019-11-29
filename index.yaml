@@ -16,14 +16,14 @@ entries:
     - syslog
     - gelf
     maintainers:
-    - email: goonohc@gmail.com
-      name: KongZ
+    - email: yahya.kimochi@gmail.com
+      name: k1m0ch1
     name: graylog
     sources:
     - https://www.graylog.org
     urls:
-    - https://github.com/k1m0ch1/helm/releases/download/graylog-2.0.1/graylog-2.0.1.tgz
-    version: 2.0.1
+    - https://github.com/k1m0ch1/helm/releases/download/graylog-2.1.0/graylog-2.1.0.tgz
+    version: 2.1.0
   - apiVersion: v1
     appVersion: 3.0.2-2
     created: "2019-11-04T10:44:02.8169714+07:00"
